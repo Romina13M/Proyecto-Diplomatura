@@ -61,7 +61,7 @@ footer{
 }
 
 .holder{
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
 
 }
@@ -70,6 +70,10 @@ h2{
     color: #2e64a1;
     font-weight: 400;
 }
+.homeimg img{
+    max-width: 100%;
+}
+
 .columnas{
     display:flex;
 }
@@ -211,5 +215,90 @@ width: 100%;
     transition: all 0.3s ease;
  }
  .formulario input[type="submit"]:hover { background-color: #2e64a1;
+
+ }
+
+ @media screen and (max-width:550px){
+
+        .columnas{
+                flex-direction: column;
+               /* padding: 0 16px;*/
+        }
+
+        .bienvenidos,
+        .testimonios {
+          width: 100%;
+        }
+
+        .holder{
+            padding: 0 16px;  
+        }
+
+        .testimonio{
+            max-width: 40%;
+            margin: 0 auto;            
+        }
+
+        .bienvenidos p{
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+            /* .testimonios{
+                display: none;}*/
+
+                .personas{
+                    flex-wrap: wrap;
+                }
+        
+                .persona{
+                    width: 30%;
+                    width: 47%;
+                    margin-bottom: 15px;
+                }
+
+                .persona p{
+                    text-align: center;
+                }
+
+
+                .contacto{
+                    flex-direction: column-reverse;
+
+                }
+
+                .formulario p{
+                    display: block;
+                }
+
+                .formulario p input,
+                .formulario p textarea{
+                    width: 95%;
+                }
+
+                .formulario p input[type="submit"]{
+                    margin-left: 410px;
+                }
+
+                header .holder {
+                display: flex;
+                /*align-items: center;*/
+                justify-content: center;    
+                }
+
+                header .logo img{
+                    max-width: 80px;
+                }
+
+                header h1{
+                    bottom: 20px;
+                }
+
+                nav ul .holder{
+                    flex-direction: column;
+                    padding: 0;
+
+                }
+
 
  }
