@@ -172,6 +172,7 @@ width: 100%;
 
  .datos ul li{
     font-size: 13px;
+    list-style-type: none;
  }
 
 .formulario p{
@@ -196,12 +197,11 @@ width: 100%;
 
  .formulario p textarea{
     resize: none;
-    height: 150px;
+    height: 200px;
  }
 
  .arriba{
     align-items: start;
-    
  }
 
  .formulario input[type="submit"]{
@@ -217,6 +217,7 @@ width: 100%;
  .formulario input[type="submit"]:hover { background-color: #2e64a1;
 
  }
+        /*MOVIL*/
 
  @media screen and (max-width:550px){
 
@@ -301,4 +302,11 @@ width: 100%;
                 }
 
 
- }
+ }  /*cierra movil*/
+
+ /*GALERIA*/
+
+ .galeria img{
+    width: 20%;
+    border: 1px solid #ddd;
+    border-radius: 10px;}
